@@ -72,3 +72,25 @@ LOAD/TEST works as long as you can browse to `MOBA\`. The sibling `Realm\` folde
 ## If you are stuck
 
 Ask Devin: “I have `speige/Realm` cloned next to `MOBA/`. Which Godot 4.7 Mono build should I use to run `Realm.Godot`?” Do not spend more than 90 minutes on Godot setup.
+
+## TEST failed: NU1101 / ILCompiler.LLVM
+
+**LOAD working + TEST aborting is expected until WASM packages restore.** TEST runs `dotnet publish` on a temp copy of the map. Those LLVM packages are **not** on nuget.org.
+
+1. This repo now has `MOBA/NuGet.Config` with the `dotnet-experimental` feed.
+2. Copy that file into the editor temp workspace (or re-LOAD `MOBA\` so the editor copies it):
+
+```text
+C:\Users\User\AppData\Roaming\Godot\app_userdata\Realm.Godot\temp_map_workspace\NuGet.Config
+```
+
+3. The machine needs internet the first time TEST compiles.
+4. Press **TEST** again. Restore should find `Microsoft.DotNet.ILCompiler.LLVM` and `runtime.win-x64.Microsoft.DotNet.ILCompiler.LLVM`.
+
+If it still fails, from PowerShell (to confirm the feed works):
+
+```powershell
+dotnet restore "C:\Users\User\AppData\Roaming\Godot\app_userdata\Realm.Godot\temp_map_workspace\CustomMap.csproj"
+```
+
+Paste that output if restore still errors.
