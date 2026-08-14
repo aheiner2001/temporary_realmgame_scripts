@@ -41,6 +41,8 @@ This map folder: MOBA/
 
 Do not modify `Realm/` in v1. Do not commit `Realm/` into the map git repo.
 
+On a **Windows** computer (recommended for Play): clone this map repo, then inside it run `git clone https://github.com/speige/Realm.git Realm` so `MOBA\` and `Realm\` are siblings. Also install Git (with Git LFS), .NET 10, and Godot 4.7 Mono. Do not copy the Mac `Realm` folder.
+
 Task 1 is: confirm the engine checkout is complete, LOAD `MOBA/` in the editor, TEST, print a chat message. Gameplay comes after that.
 
 ## Match rules (v1)

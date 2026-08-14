@@ -111,6 +111,24 @@ Prerequisites from the engine repo:
 
 Do not spend more than 90 minutes stuck on Godot. Ask Devin which editor binary to run.
 
+**Windows machine (recommended for Play):** clone **two** repos. Put the engine **next to `MOBA/`**, not in an unrelated folder.
+
+```powershell
+cd temporary_realmgame_scripts
+git clone https://github.com/speige/Realm.git Realm
+```
+
+Layout must be:
+
+```text
+temporary_realmgame_scripts\
+  MOBA\
+  docs\
+  Realm\     ← this clone, a separate git repo. Do not commit it into the map repo.
+```
+
+Also install Git (with Git LFS), .NET 10 SDK, and Godot 4.7 Mono. Do not copy the Mac `Realm` folder; clone fresh on Windows. Then LOAD `MOBA\` in the editor and TEST.
+
 - [ ] **Step 3: LOAD `MOBA/` in the Realm map editor and TEST**
 
 1. Run `Realm.Godot` (accept the asset license if prompted).
@@ -154,6 +172,13 @@ To refresh `MOBA/lib/Realm.MapAPI.dll` from engine source (only if the API chang
 ```bash
 dotnet build Realm/Realm.MapAPI/Realm.MapAPI.csproj
 cp Realm/Realm.MapAPI/bin/Debug/net10.0/Realm.MapAPI.* MOBA/lib/
+```
+
+Windows (PowerShell):
+
+```powershell
+dotnet build Realm\Realm.MapAPI\Realm.MapAPI.csproj
+Copy-Item Realm\Realm.MapAPI\bin\Debug\net10.0\Realm.MapAPI.* MOBA\lib\ -Force
 ```
 
 - [ ] **Step 6: Commit**

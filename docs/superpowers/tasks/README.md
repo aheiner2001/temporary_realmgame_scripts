@@ -19,4 +19,4 @@ Open **one** task file below. Finish it. Commit. Then open the next.
 | Next week | [09-gold.md](09-gold.md) | `+15 gold` on minion kill |
 | Next week | [10-heroes-respawn.md](10-heroes-respawn.md) | **Devin demo:** hero + 8s respawn |
 
-Engine repo: [speige/Realm](https://github.com/speige/Realm.git), cloned as `Realm/` next to `MOBA/`. If you get stuck more than 90 minutes on Godot, ask Devin which 4.7 Mono build to run.
+Engine repo: [speige/Realm](https://github.com/speige/Realm.git), cloned as `Realm/` next to `MOBA/`. On Windows, clone **this map repo** and then `git clone https://github.com/speige/Realm.git Realm` inside it. See [01-setup-and-smoke.md](01-setup-and-smoke.md) → **Moving to a Windows computer**. If you get stuck more than 90 minutes on Godot, ask Devin which 4.7 Mono build to run.

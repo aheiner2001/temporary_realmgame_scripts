@@ -24,6 +24,34 @@ temporary_realmgame_scripts/
 
 Do **not** commit the `Realm/` folder into the map git repo. It is a separate GitHub project.
 
+## Moving to a Windows computer
+
+The editor/game is easiest to run on Windows. You need **two clones**, not one, and Realm must sit **next to `MOBA/`** (not in some unrelated folder).
+
+```text
+temporary_realmgame_scripts\
+  MOBA\          ← from this map repo
+  docs\
+  Realm\         ← clone the engine here (second git repo)
+```
+
+On the Windows machine:
+
+1. Install Git (enable **Git LFS** if asked), **.NET 10 SDK**, and Godot **4.7 Mono** (ask Devin for the team’s editor build if you do not have an installer).
+2. Clone **this map repo** (the one that contains `MOBA/` and `docs/`).
+3. Inside that folder, clone the engine as `Realm` (this does **not** duplicate the map repo):
+
+```powershell
+cd temporary_realmgame_scripts
+git clone https://github.com/speige/Realm.git Realm
+```
+
+4. Do **not** copy the Mac `Realm\` folder by hand. A fresh clone on Windows is cleaner.
+5. Confirm you see `Realm\Realm.slnx`, `Realm\Realm.MapAPI\`, and `Realm\Realm.Godot\project.godot`.
+6. Continue the Steps below: run `Realm.Godot` → **LOAD** `MOBA\` → **TEST**.
+
+LOAD/TEST works as long as you can browse to `MOBA\`. The sibling `Realm\` folder is also what the VS Code “Re-generate Map API” task expects.
+
 ## Steps
 
 - [x] Watch the three videos/pages listed in the plan (skip last-hitting / jungle / ranked)
