@@ -25,19 +25,23 @@ This is not League of Legends. A few basic heroes and one lane are enough.
 ## Two repos
 
 ```text
-Realm engine (clone to press Play; do not modify in v1)
-  Realm.Godot      game window
+https://github.com/speige/Realm.git   (already cloned as Realm/ next to MOBA/)
+  Realm.Godot      game + map editor (Godot 4.7 Mono)
   Realm.MapAPI     generic IGameAPI (SpawnUnit, AttackMove, gold, timers, …)
+  Realm.slnx       engine solution
+  MapTemplate      boilerplate for new maps
         ↑
         | map compiles to WebAssembly and runs sandboxed
         |
-This repo: MOBA/
+This map folder: MOBA/
   MapScript.cs     match coordinator
   metadata.json    unit stats
   terrain.json     Isabella’s map (read-only for us)
 ```
 
-The engineer implementing this may not have the engine cloned yet. Task 0 is clone + load this map + print a chat message. Gameplay comes after that.
+Do not modify `Realm/` in v1. Do not commit `Realm/` into the map git repo.
+
+Task 1 is: confirm the engine checkout is complete, LOAD `MOBA/` in the editor, TEST, print a chat message. Gameplay comes after that.
 
 ## Match rules (v1)
 
@@ -371,7 +375,7 @@ Do not study last-hitting, jungle pathing, or ranked roles.
 
 | When | Deliverable |
 |---|---|
-| Today | Videos + clone engine + map loads + chat message + one spawned unit |
+| Today | Confirm `Realm/` checkout + LOAD/TEST `MOBA/` + chat message + one spawned unit |
 | Day 2 (2-day milestone) | One lane, waves, two castles, destroy castle to win |
 | Next week (supervisor demo) | Towers, two hero types, 8s respawn, gold, Blue/Red 1v1 |
 | Extra time only | Third hero, 3 lanes if terrain ready, tiny shop, real `ReviveUnit` |
