@@ -6,7 +6,11 @@
       "Name": "adventurer",
       "Description": "",
       "PathingType": 9,
-      "ModelPath": "adventurer.glb"
+      "ModelPath": "adventurer.glb",
+      "MaxHp": 400,
+      "Speed": 4.0,
+      "Damage": 25,
+      "Range": 1.5
     },
     {
       "UnitId": "armored_dragon",
