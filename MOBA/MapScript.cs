@@ -5,6 +5,7 @@ using Realm.MapAPI;
 
 public class CustomMap : IWasmModule
 {
+    // Smoke test: spawn + attack-move. Bump this file so TEST rebuilds WASM.
     public void Initialize(IGameAPI api)
     {
         Vector3 start = api.GetPlayerStartLocation(0);
