@@ -4,20 +4,62 @@
     {
       "UnitId": "adventurer",
       "Name": "adventurer",
-      "Description": "",
+      "Description": "Blue melee hero",
       "PathingType": 9,
       "ModelPath": "adventurer.glb",
       "MaxHp": 400,
-      "Speed": 4.0,
       "Damage": 25,
-      "Range": 1.5
+      "Range": 1.5,
+      "Armor": 2,
+      "Speed": 4.0,
+      "AttackType": "melee",
+      "IsHero": true,
+      "GoldBounty": 150
     },
     {
       "UnitId": "armored_dragon",
       "Name": "armored_dragon",
-      "Description": "",
+      "Description": "Red ranged hero",
       "PathingType": 9,
-      "ModelPath": "armored_dragon.glb"
+      "ModelPath": "armored_dragon.glb",
+      "MaxHp": 350,
+      "Damage": 20,
+      "Range": 8,
+      "Armor": 2,
+      "Speed": 4.0,
+      "AttackType": "ranged",
+      "IsHero": true,
+      "GoldBounty": 150
+    },
+    {
+      "UnitId": "melee_minion",
+      "Name": "melee_minion",
+      "Description": "Lane minion",
+      "PathingType": 9,
+      "ModelPath": "adventurer.glb",
+      "MaxHp": 80,
+      "Damage": 8,
+      "Range": 1.5,
+      "Armor": 0,
+      "Speed": 3.5,
+      "AttackType": "melee",
+      "IsHero": false,
+      "GoldBounty": 15
+    },
+    {
+      "UnitId": "ranged_minion",
+      "Name": "ranged_minion",
+      "Description": "Lane caster minion",
+      "PathingType": 9,
+      "ModelPath": "armored_dragon.glb",
+      "MaxHp": 60,
+      "Damage": 10,
+      "Range": 8,
+      "Armor": 0,
+      "Speed": 3.5,
+      "AttackType": "ranged",
+      "IsHero": false,
+      "GoldBounty": 15
     }
   ],
   "CustomBuildings": [
@@ -31,16 +73,32 @@
     {
       "UnitId": "castle",
       "Name": "castle",
-      "Description": "",
+      "Description": "Team base. Destroy to win.",
       "PathingType": 32,
-      "ModelPath": "castle.glb"
+      "ModelPath": "castle.glb",
+      "MaxHp": 3000,
+      "Damage": 0,
+      "Range": 0,
+      "Armor": 5,
+      "Speed": 0,
+      "AttackType": "none",
+      "IsHero": false,
+      "GoldBounty": 0
     },
     {
       "UnitId": "castle_tower_1",
       "Name": "castle_tower_1",
-      "Description": "",
+      "Description": "Lane tower",
       "PathingType": 32,
-      "ModelPath": "castle_tower_1.glb"
+      "ModelPath": "castle_tower_1.glb",
+      "MaxHp": 1200,
+      "Damage": 40,
+      "Range": 12,
+      "Armor": 5,
+      "Speed": 0,
+      "AttackType": "ranged",
+      "IsHero": false,
+      "GoldBounty": 100
     },
     {
       "UnitId": "seashell_arch",
