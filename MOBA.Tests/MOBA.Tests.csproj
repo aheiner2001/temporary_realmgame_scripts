@@ -20,5 +20,6 @@
     <Compile Include="..\MOBA\LanePaths.cs" Link="LanePaths.cs" />
     <Compile Include="..\MOBA\WinDecision.cs" Link="WinDecision.cs" />
     <Compile Include="..\MOBA\GoldTable.cs" Link="GoldTable.cs" />
+    <Compile Include="..\MOBA\MatchLog.cs" Link="MatchLog.cs" />
   </ItemGroup>
 </Project>

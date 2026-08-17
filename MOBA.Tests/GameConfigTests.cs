@@ -26,5 +26,6 @@ public class GameConfigTests
         Assert.Equal("armored_dragon", GameConfig.RedHeroUnitId);
         Assert.Equal("castle", GameConfig.CastleUnitId);
         Assert.Equal("castle_tower_1", GameConfig.TowerUnitId);
+        Assert.True(GameConfig.DebugChat);
     }
 }

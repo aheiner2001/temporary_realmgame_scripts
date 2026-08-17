@@ -24,4 +24,5 @@ public static class GameConfig
     public const string RedHeroUnitId = "armored_dragon";
     public const string CastleUnitId = "castle";
     public const string TowerUnitId = "castle_tower_1";
+    public const bool DebugChat = true;
 }
