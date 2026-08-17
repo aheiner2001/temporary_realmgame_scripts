@@ -1,3 +1,4 @@
+using System.Numerics;
 using Realm.MapAPI;
 
 namespace Realm.Maps;
@@ -53,13 +54,16 @@ public sealed class HeroSystem
 
     private void TrySpawn(IGameAPI api, int playerIndex, string unitTypeId, string fountainName)
     {
-        var unit = api.SpawnUnitForPlayer(
-            unitTypeId,
-            Coordinates.Resolve(api, fountainName),
-            playerIndex);
+        Vector3 position = Coordinates.Resolve(api, fountainName);
+        var unit = api.SpawnUnitForPlayer(unitTypeId, position, playerIndex);
         if (unit == null)
+        {
+            MatchLog.Write(api.BroadcastMessage, MatchLog.SpawnFailed(unitTypeId, position, playerIndex));
             return;
+        }
+
         OwnerTag.Set(unit, playerIndex);
         _heroUnitByPlayer[playerIndex] = unit.UniqueId;
+        MatchLog.Write(api.BroadcastMessage, MatchLog.Spawned(unitTypeId, unit.UniqueId, position, playerIndex));
     }
 }

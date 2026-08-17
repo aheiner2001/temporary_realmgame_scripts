@@ -29,8 +29,14 @@ public sealed class TeamSetup
     private static IUnit? Spawn(IGameAPI api, string unitTypeId, Vector3 position, int playerIndex)
     {
         var unit = api.SpawnUnitForPlayer(unitTypeId, position, playerIndex);
-        if (unit != null)
-            OwnerTag.Set(unit, playerIndex);
+        if (unit == null)
+        {
+            MatchLog.Write(api.BroadcastMessage, MatchLog.SpawnFailed(unitTypeId, position, playerIndex));
+            return null;
+        }
+
+        OwnerTag.Set(unit, playerIndex);
+        MatchLog.Write(api.BroadcastMessage, MatchLog.Spawned(unitTypeId, unit.UniqueId, position, playerIndex));
         return unit;
     }
 }

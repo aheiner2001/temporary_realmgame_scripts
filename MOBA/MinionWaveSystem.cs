@@ -26,6 +26,7 @@ public sealed class MinionWaveSystem
     {
         if (timerHandle != _waveTimerHandle)
             return;
+        MatchLog.Write(api.BroadcastMessage, MatchLog.WaveTick(_lanes.Count));
         foreach (var lane in _lanes)
         {
             SpawnWave(api, GameConfig.BluePlayerIndex, lane.BluePath);
@@ -82,7 +83,10 @@ public sealed class MinionWaveSystem
         {
             var unit = api.SpawnUnitForPlayer(unitTypeId, spawn, playerIndex);
             if (unit == null)
+            {
+                MatchLog.Write(api.BroadcastMessage, MatchLog.SpawnFailed(unitTypeId, spawn, playerIndex));
                 continue;
+            }
             OwnerTag.Set(unit, playerIndex);
             unit.AttackMove(path[firstDest]);
             _minions.Add(new TrackedMinion
