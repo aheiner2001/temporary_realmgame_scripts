@@ -7,6 +7,7 @@ public sealed class WinSystem
     private readonly int _blueCastleId;
     private readonly int _redCastleId;
     private bool _matchEnded;
+    private bool _loggedMissingCastle;
 
     public WinSystem(int blueCastleId, int redCastleId)
     {
@@ -20,6 +21,12 @@ public sealed class WinSystem
     {
         if (_matchEnded)
             return;
+
+        if ((_blueCastleId == 0 || _redCastleId == 0) && !_loggedMissingCastle)
+        {
+            _loggedMissingCastle = true;
+            MatchLog.Write(api.BroadcastMessage, MatchLog.WinCheckSkipped());
+        }
 
         var winner = WinDecision.FromCastleState(
             IsDead(api, _blueCastleId),
@@ -40,6 +47,8 @@ public sealed class WinSystem
             api.TriggerPlayerDefeat(GameConfig.BluePlayerIndex, "Your castle was destroyed.");
             api.BroadcastMessage("Red wins!");
         }
+
+        MatchLog.Write(api.BroadcastMessage, MatchLog.WinFired(winner));
     }
 
     private static bool IsDead(IGameAPI api, int id)

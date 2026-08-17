@@ -20,5 +20,6 @@ public sealed class GoldSystem
 
         api.AdjustPlayerGold(playerIndex, gold);
         api.SendMessageToPlayer(playerIndex, $"+{gold} gold");
+        MatchLog.Write(api.BroadcastMessage, MatchLog.GoldAwarded(gold, playerIndex, dead.UnitId));
     }
 }

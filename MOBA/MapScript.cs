@@ -28,6 +28,8 @@ public class CustomMap : IWasmModule
         _heroes = new HeroSystem();
         _heroes.SpawnStartingHeroes(api);
 
+        MatchLog.Write(api.BroadcastMessage, MatchLog.CastleSummary(setup.BlueCastleId, setup.RedCastleId));
+
         api.OnUnitDied += OnUnitDied;
         api.OnTimerExpired += OnTimerExpired;
         api.BroadcastMessage("Guest WasmModule initialized successfully");
