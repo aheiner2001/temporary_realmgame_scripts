@@ -837,7 +837,7 @@
     ]
   },
   "packageFolders": {
-    "/var/folders/z0/p5dtjsk132j_s9d9rw105qhc0000gn/T/cursor-sandbox-cache/7fdafa0efee05cf960fdea6c4e98616e/nuget": {}
+    "/Users/aaronheiner/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -845,7 +845,7 @@
       "projectUniqueName": "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA.Tests/MOBA.Tests.csproj",
       "projectName": "MOBA.Tests",
       "projectPath": "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA.Tests/MOBA.Tests.csproj",
-      "packagesPath": "/var/folders/z0/p5dtjsk132j_s9d9rw105qhc0000gn/T/cursor-sandbox-cache/7fdafa0efee05cf960fdea6c4e98616e/nuget",
+      "packagesPath": "/Users/aaronheiner/.nuget/packages/",
       "outputPath": "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
