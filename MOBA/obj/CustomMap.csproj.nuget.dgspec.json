@@ -1,19 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA.Tests/MOBA.Tests.csproj": {}
+    "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA/CustomMap.csproj": {}
   },
   "projects": {
-    "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA.Tests/MOBA.Tests.csproj": {
+    "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA/CustomMap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA.Tests/MOBA.Tests.csproj",
-        "projectName": "MOBA.Tests",
-        "projectPath": "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA.Tests/MOBA.Tests.csproj",
+        "projectUniqueName": "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA/CustomMap.csproj",
+        "projectName": "CustomMap",
+        "projectPath": "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA/CustomMap.csproj",
         "packagesPath": "/Users/aaronheiner/.nuget/packages/",
-        "outputPath": "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA.Tests/obj/",
+        "outputPath": "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA/NuGet.Config",
           "/Users/aaronheiner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
@@ -21,7 +22,8 @@
         ],
         "sources": {
           "/opt/homebrew/Cellar/dotnet/10.0.107/libexec/library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-experimental/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
@@ -45,19 +47,19 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
-            "Microsoft.NET.Test.Sdk": {
+            "Microsoft.DotNet.ILCompiler.LLVM": {
               "target": "Package",
-              "version": "[17.14.1, )"
+              "version": "[10.0.0-rc.1.26357.1, )"
             },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.9.3, )"
-            },
-            "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[10.0.7, )",
+              "autoReferenced": true
+            },
+            "runtime.win-x64.Microsoft.DotNet.ILCompiler.LLVM": {
+              "target": "Package",
+              "version": "[10.0.0-rc.1.26357.1, )"
             }
           },
           "imports": [
@@ -351,6 +353,11 @@
             "System.Xml.XPath": "(,4.3.32767]",
             "System.Xml.XPath.XDocument": "(,5.0.32767]"
           }
+        }
+      },
+      "runtimes": {
+        "wasi-wasm": {
+          "#import": []
         }
       }
     }

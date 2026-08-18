@@ -1,7 +1,18 @@
 namespace Realm.Maps;
 
+public enum GameMode
+{
+    ThreeLanePush = 0,
+    ArenaBrawl = 1,
+    ControlPoints = 2,
+    BossObjective = 3,
+    HeroDeathmatch = 4
+}
+
 public static class GameConfig
 {
+    public static GameMode CurrentMode = GameMode.ThreeLanePush;
+
     public const int BluePlayerIndex = 0;
     public const int RedPlayerIndex = 1;
     public const int BlueTeamIndex = 0;

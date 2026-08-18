@@ -13,13 +13,12 @@
     <SourceRoot Include="/Users/aaronheiner/.nuget/packages/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)xunit.runner.visualstudio/3.1.3/build/net8.0/xunit.runner.visualstudio.props" Condition="Exists('$(NuGetPackageRoot)xunit.runner.visualstudio/3.1.3/build/net8.0/xunit.runner.visualstudio.props')" />
-    <Import Project="$(NuGetPackageRoot)xunit.core/2.9.3/build/xunit.core.props" Condition="Exists('$(NuGetPackageRoot)xunit.core/2.9.3/build/xunit.core.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.testplatform.testhost/17.14.1/build/net8.0/Microsoft.TestPlatform.TestHost.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testplatform.testhost/17.14.1/build/net8.0/Microsoft.TestPlatform.TestHost.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.codecoverage/17.14.1/build/netstandard2.0/Microsoft.CodeCoverage.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codecoverage/17.14.1/build/netstandard2.0/Microsoft.CodeCoverage.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk/17.14.1/build/net8.0/Microsoft.NET.Test.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk/17.14.1/build/net8.0/Microsoft.NET.Test.Sdk.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.illink.tasks/10.0.7/build/Microsoft.NET.ILLink.Tasks.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.illink.tasks/10.0.7/build/Microsoft.NET.ILLink.Tasks.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.dotnet.ilcompiler.llvm/10.0.0-rc.1.26357.1/build/Microsoft.DotNet.ILCompiler.LLVM.props" Condition="Exists('$(NuGetPackageRoot)microsoft.dotnet.ilcompiler.llvm/10.0.0-rc.1.26357.1/build/Microsoft.DotNet.ILCompiler.LLVM.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">/Users/aaronheiner/.nuget/packages/xunit.analyzers/1.18.0</Pkgxunit_analyzers>
+    <Pkgruntime_win-x64_Microsoft_DotNet_ILCompiler_LLVM Condition=" '$(Pkgruntime_win-x64_Microsoft_DotNet_ILCompiler_LLVM)' == '' ">/Users/aaronheiner/.nuget/packages/runtime.win-x64.microsoft.dotnet.ilcompiler.llvm/10.0.0-rc.1.26357.1</Pkgruntime_win-x64_Microsoft_DotNet_ILCompiler_LLVM>
+    <PkgMicrosoft_NET_ILLink_Tasks Condition=" '$(PkgMicrosoft_NET_ILLink_Tasks)' == '' ">/Users/aaronheiner/.nuget/packages/microsoft.net.illink.tasks/10.0.7</PkgMicrosoft_NET_ILLink_Tasks>
+    <PkgMicrosoft_DotNet_ILCompiler_LLVM Condition=" '$(PkgMicrosoft_DotNet_ILCompiler_LLVM)' == '' ">/Users/aaronheiner/.nuget/packages/microsoft.dotnet.ilcompiler.llvm/10.0.0-rc.1.26357.1</PkgMicrosoft_DotNet_ILCompiler_LLVM>
   </PropertyGroup>
 </Project>
