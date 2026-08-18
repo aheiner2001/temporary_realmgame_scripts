@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MOBA.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3eb98d0af59761e6175de3d30ee2f91f2563f624")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc71f1387378dec6d9757bef0ecbcc7d3f435f1d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MOBA.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MOBA.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

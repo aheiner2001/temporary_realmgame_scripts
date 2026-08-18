@@ -1,5 +1,7 @@
 # Task 1 — Setup and smoke
 
+**Run the game (zip or GitHub):** [how-to-run-realm-and-test-moba.md](../../how-to-run-realm-and-test-moba.md)
+
 **When:** Today  
 **Plan:** Task 1 in `docs/superpowers/plans/2026-08-14-moba-map-scripts.md`  
 **Done when:** Playing the map shows chat `MOBA scripts loaded`

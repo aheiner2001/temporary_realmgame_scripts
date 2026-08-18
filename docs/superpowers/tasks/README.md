@@ -1,5 +1,8 @@
 # Task checklists (do these in order)
 
+**Run the game:** [How to run Realm and test MOBA](../../how-to-run-realm-and-test-moba.md) (release zip or GitHub source).  
+**Playtest after TEST works:** [MOBA playtest checklist](../../moba-playtest-checklist.md) (15 tests + next steps).
+
 Full code for every step is in:
 
 `docs/superpowers/plans/2026-08-14-moba-map-scripts.md`

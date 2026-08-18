@@ -10,7 +10,7 @@
         "projectUniqueName": "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA.Tests/MOBA.Tests.csproj",
         "projectName": "MOBA.Tests",
         "projectPath": "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA.Tests/MOBA.Tests.csproj",
-        "packagesPath": "/Users/aaronheiner/.nuget/packages/",
+        "packagesPath": "/var/folders/z0/p5dtjsk132j_s9d9rw105qhc0000gn/T/cursor-sandbox-cache/c06198797ef8cf6ee28141089eff2bc8/nuget",
         "outputPath": "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/MOBA.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
