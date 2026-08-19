@@ -17,8 +17,9 @@ public class CustomMap : IWasmModule
         api.BroadcastMessage("Guest Initialize started");
 
         var lanes = Lane.ThreeLanesFromCoordinates(api);
+
         var setup = new TeamSetup();
-        setup.Apply(api, lanes[1]);
+        setup.Apply(api, lanes[0]);
         _win = new WinSystem(setup.BlueCastleId, setup.RedCastleId);
 
         _waves = new MinionWaveSystem();
