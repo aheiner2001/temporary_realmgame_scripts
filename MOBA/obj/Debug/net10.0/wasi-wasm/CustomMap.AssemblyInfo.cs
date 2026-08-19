@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CustomMap")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b19496efa00c4a309b435d79ec5a3b463299c8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1913a5a4e895d5ca9a621f1325cc080232e22bad")]
 [assembly: System.Reflection.AssemblyProductAttribute("CustomMap")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CustomMap")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
