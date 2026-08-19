@@ -3,6 +3,13 @@ using System.Numerics;
 
 namespace Realm.Maps;
 
+public enum MatchWinner
+{
+    None,
+    Blue,
+    Red
+}
+
 public static class MatchLog
 {
     public static void Write(Action<string>? broadcast, string message)

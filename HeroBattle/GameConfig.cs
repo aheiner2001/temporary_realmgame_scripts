@@ -9,4 +9,5 @@ public static class GameConfig
     public const string Player2HeroId = "armored_dragon";
     public const string UnitTypeId = "melee_minion";
     public const int UnitsPerPlayer = 5;
+    public const bool DebugChat = true;
 }

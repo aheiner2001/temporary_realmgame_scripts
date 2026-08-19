@@ -1,0 +1,17 @@
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/obj/Debug/net10.0/wasi-wasm/CustomMap.csproj.AssemblyReference.cache
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/obj/Debug/net10.0/wasi-wasm/CustomMap.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/obj/Debug/net10.0/wasi-wasm/CustomMap.AssemblyInfoInputs.cache
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/obj/Debug/net10.0/wasi-wasm/CustomMap.AssemblyInfo.cs
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/obj/Debug/net10.0/wasi-wasm/CustomMap.csproj.CoreCompileInputs.cache
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/obj/Debug/net10.0/wasi-wasm/CustomMap.sourcelink.json
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/bin/Debug/net10.0/wasi-wasm/CustomMap.deps.json
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/bin/Debug/net10.0/wasi-wasm/CustomMap.dll
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/bin/Debug/net10.0/wasi-wasm/CustomMap.pdb
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/bin/Debug/net10.0/wasi-wasm/Realm.MapAPI.dll
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/bin/Debug/net10.0/wasi-wasm/Realm.MapAPI.pdb
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/bin/Debug/net10.0/wasi-wasm/Realm.MapAPI.xml
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/obj/Debug/net10.0/wasi-wasm/CustomMap.csproj.Up2Date
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/obj/Debug/net10.0/wasi-wasm/CustomMap.dll
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/obj/Debug/net10.0/wasi-wasm/refint/CustomMap.dll
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/obj/Debug/net10.0/wasi-wasm/CustomMap.pdb
+/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/HeroBattle/obj/Debug/net10.0/wasi-wasm/ref/CustomMap.dll

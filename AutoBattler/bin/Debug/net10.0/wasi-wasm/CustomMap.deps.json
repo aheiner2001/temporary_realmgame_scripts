@@ -1,0 +1,40 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0/wasi-wasm",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {},
+    ".NETCoreApp,Version=v10.0/wasi-wasm": {
+      "CustomMap/1.0.0": {
+        "dependencies": {
+          "Realm.MapAPI": "1.0.0.0"
+        },
+        "runtime": {
+          "CustomMap.dll": {}
+        }
+      },
+      "Realm.MapAPI/1.0.0.0": {
+        "runtime": {
+          "Realm.MapAPI.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CustomMap/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Realm.MapAPI/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

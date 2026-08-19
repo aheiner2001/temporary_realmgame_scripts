@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "J0pR2eu4Ne8=",
+  "success": true,
+  "projectFilePath": "/Users/aaronheiner/Sandbox/temporary_realmgame_scripts/TowerDefense/CustomMap.csproj",
+  "expectedPackageFiles": [
+    "/Users/aaronheiner/.nuget/packages/microsoft.dotnet.ilcompiler.llvm/10.0.0-rc.1.26357.1/microsoft.dotnet.ilcompiler.llvm.10.0.0-rc.1.26357.1.nupkg.sha512",
+    "/Users/aaronheiner/.nuget/packages/microsoft.net.illink.tasks/10.0.7/microsoft.net.illink.tasks.10.0.7.nupkg.sha512",
+    "/Users/aaronheiner/.nuget/packages/runtime.wasi-wasm.microsoft.dotnet.ilcompiler.llvm/10.0.0-rc.1.26357.1/runtime.wasi-wasm.microsoft.dotnet.ilcompiler.llvm.10.0.0-rc.1.26357.1.nupkg.sha512",
+    "/Users/aaronheiner/.nuget/packages/runtime.win-x64.microsoft.dotnet.ilcompiler.llvm/10.0.0-rc.1.26357.1/runtime.win-x64.microsoft.dotnet.ilcompiler.llvm.10.0.0-rc.1.26357.1.nupkg.sha512"
+  ],
+  "logs": []
+}
